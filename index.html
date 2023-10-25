@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <header class="page-header">
+    <header class="page-header" data-test="header">
         <nav class="navigation">
             <a class="navigation-logo" href="index.html">
                 <img class="page-header-logo" alt="Логотип Седоны" src="#">
@@ -42,12 +42,14 @@
         </nav>
     </header>
 
-    <main class="main-index">
-        <h1 class="visually-hidden">Священный город Седона</h1>
+    <main class="main-index" data-test="main">
+      <section class="hero" data-test="hero">
+      <h1 class="visually-hidden">Священный город Седона</h1>
         <img class="logo" src="#" alt="Логотип Седоны">
         <h2 class="advantages-title">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <p class="advantages-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-        <section class="advantages">
+      </section>
+        <section class="advantages" data-test="advantages">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="advantages-list">
                 <li class="advantages-item">
@@ -90,26 +92,26 @@
                 </li>
             </ul>
         </section>
-        <section class="hotels-search">
-            <h2 class="hotels-search-title">Заинтересовались?</h2>
-            <p class="hotels-search-announcement">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-            <a class="button hotels-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        <section class="search" data-test="search">
+            <h2 class="search-title">Заинтересовались?</h2>
+            <p class="search-announcement">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+            <a class="button search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
         </section>
 
-        <section class="newsletter">
-            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-            <p class="newsletter-announcement">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-                <label for="newsletter-email">Email</label>
-                <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-                <button class="button newsletter-button" type="submit">
+        <section class="subscribe" data-test="subscribe">
+            <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="subscribe-announcement">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+                <label for="subscribe-email">Email</label>
+                <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
+                <button class="button subscribe-button" type="submit">
                     <span>Подписаться</span>
                 </button>
             </form>
         </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
 
         <section class="footer-social">
             <h2 class="visually-hidden">Контакты</h2>
